@@ -1,0 +1,18 @@
+\contentsline {section}{\numberline {1}Introduction}{2}
+\contentsline {subsection}{\numberline {1.1}Motivation}{2}
+\contentsline {subsection}{\numberline {1.2}Problem Observation}{2}
+\contentsline {section}{\numberline {2}Alberta's Oil Sands Analysis}{4}
+\contentsline {subsection}{\numberline {2.1}CO$_2$ Emissions Overview}{4}
+\contentsline {subsection}{\numberline {2.2}The Keystone XL Pipeline}{5}
+\contentsline {section}{\numberline {3}Oil Sands EROI Analysis}{6}
+\contentsline {subsection}{\numberline {3.1}Oil Sands EROI Overview}{6}
+\contentsline {subsection}{\numberline {3.2}CO$_2$ Offset by Investing in Wind Energy}{7}
+\contentsline {subsection}{\numberline {3.3}CO$_2$ Offset by Investing in Solar Energy}{11}
+\contentsline {subsection}{\numberline {3.4}CO$_2$ Offset Calculation}{13}
+\contentsline {section}{\numberline {4}Possible Uses of Excess Power Generated}{14}
+\contentsline {subsection}{\numberline {4.1}Selling Electricity Back to the Grid}{14}
+\contentsline {subsection}{\numberline {4.2}Cleaning Contaminated Water}{14}
+\contentsline {subsection}{\numberline {4.3}Powering Underground Electric Heaters as an Alternative to Pumping Steam Underground for Bitumen Extraction}{14}
+\contentsline {subsection}{\numberline {4.4}Implementing UPM's Adavanced Biofuels}{15}
+\contentsline {subsection}{\numberline {4.5}An Alternative to a Carbon Tax}{15}
+\contentsline {section}{\numberline {5}Conclusion}{16}
