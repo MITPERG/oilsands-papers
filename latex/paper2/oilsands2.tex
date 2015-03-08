@@ -1,6 +1,6 @@
 \title{ {\bf Oil Sands Research }}
 \author{
-           To add to the original paper\\
+           To add to Paper\#1\\
 	  }
 \date{Spring 2015}
 
@@ -29,63 +29,67 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{About}
-Applied math in industry
-1) modelisation
-  - we have data, we don't know if this data is useful or not, we need to show that we
+In this paper we attack the Oil Sands EROI from an applied math \& computer science approach with a touch of data science and data visualization. In this paper, we focus on: 
+\begin{enumerate}
+\item {\bf Modelling} \\
+We have data, we don't know if this data is useful or not, we need to show that we
 need to show in our model for achiving results, and data to feed that model. 
-2) simulation
-we have a lot of data that depend on real models. identify scenarios. and simulate to 
+\item {\bf Simulating} \\
+We have a lot of data that depend on real models. identify scenarios. and simulate to 
 show that this configuration is better than the conventional configuration 
-3) optimization 
-what are the most important factors. which elements take into account. most important
+\item {\bf Optimazing} \\
+What are the most important factors. which elements take into account. most important
 variables. \\
+\end{enumerate}
 
-This is not a mere Minimizing/Maximizing optimization problem in which we are trying to minimize the CO2 amount while maximizing profits as simply as that, but it is rather
-a modern complex optimization problem combining solutions from Discrete, Combinatorial,
-Stochastic, and Multi-Objetive algorithms. \\
+The Oil Sands industry is not a simple and direct Minimizing/Maximizing optimization problem in which we are trying to minimize the $CO_2$ amount while maximizing profits as simply as that, but it is rather a modern complex optimization problem combining solutions from Discrete, Combinatorial, Stochastic, and Multi-Objetive algorithms. \\
 
-We discuss the combination of multiple methods to find a better configuration than
-the conventional configuration, meta-huristic algorithms. \\
+In this paper, we didscuss the combination of multiple methods to find a better configuration than the conventional configuration through meta-huristic algorithms. \\
 
-The big picture: what do we propose? and to whom do we propose to? Then a several things to consider. 
+\subsection{Supply \& Demand}
 
-\subsection{Supply and Demand}
-Sure we always talk about demand and supply, but we want to talk about supply more regarding need. The price fluctuates. Your basic need evolves more slowly. Concrete need. Elastic and inelastic demand. Gives an interesting perspective. \\
+Currently, there is more supply than demand. In this paper, we are interested in studying supply vs deman from supply ``need'' point of view. The price of oil has been fluctuating a lot in the past months, yet people basic needs have been evolving more slowly. The price of gas is not considerably lower and we want to address the issue of  supply from a concrete need of the population. We will talk about elastic and inelastic demand, this will give an interesting perspective to the paper. \\
 
-We have more supply than demand. That's why the price of oil is down. (Find out why). The keystone XL pipeline got refused.\\
+The highest price for a barrel was above \$100 in 2013 [ref]. However, oil sands idustries were making their highest profits back in 2007, when the price of a barrel of oil was \$54 [ref]. Therefore, industries were making four times as much profit was they were making it today. What changed? As the price of a barrel of oil went up, so did all the supplier costs and third party services. Now, the price is down, but the cost of suppliers and other vendors is not down, but they remain the same. That's what the main issue is right now. What we want to do is find ways to reduce supplier costs. They have not reached a technological peak so that the supply of these suppliers is affordable.  \\
 
-The highest price for a barrel was above \$100 in 2013. This doesn't mean that the oil sands idustries were making their highest profits. Back in 2007, when the price of a barrel of oil was \$54, the industries were making four times as much profit was they were making it today [ref]. What changed? As the price of a barrel of oil went up, so did all the supplier costs and 3rd party services. Now, the price is down, but the cost of suppliers and other vendors is not down, but they remain the same. That's what the main issue is right now. What we want to do is reduce supplier costs. They have not reached a technological peak so that the supply of this suppliers is so big that the cost of  ``fracking'' or ``steam'' becomes affordable.    \\
+TO ADD: the situation regarding Keystone XL
 
-this are other perspective to add to the paper. 
+\subsection{Problem Domain}
 
-\subsection{Math}
+We address the Oil Sands EROI problem from the following perpective: \\
 
-\begin{itemize}
-\item Alberta Oil Sands Network
-\item methods for oil sand development
-\end{itemize}
-
-Problem: Define $O$ the cost of a barrel of oil in the market, $E$ the energy required to develop a barrel of oil, $C$ the cost of producing 1 barrel of oil with a given method, $P$ the profit made by the oil company\footnote{If different companies have different profits then we talk about another vector of prices, different companies have different prices associated with the landscape they work on}, and $X$ the amount of $CO_2\footnote{Specify what exactly do we mean by $CO_2$ here: CO2 produced by oil sands companies}$ released by producing that barrel. First, we want to model the following cost vector $v$ as a multi-objective optimization problem:
+{\bf Definition:} Define $B$ the cost of a barrel of oil in the market, $E$ the energy required to develop a barrel of oil, $C$ the cost of producing 1 barrel of oil with a given method, $P$ the profit made by the oil company exploiting the bitumen, and $X$ the amount of $CO_2$ released by producing that barrel. We want to model the following cost vector $v$ as a multi-objective optimization problem:
 
 \begin{displaymath}
-v = \langle O, E_m, C_m, P_m, X_m \rangle
+v = \langle B, E, C_B, P, X \rangle
 \end{displaymath}
 
-We build an optimized unidimensional function that is always based on decisions. Depending on our decisions, we weight some variables more than others. A decision that was made based on a certain variable more than other variable. This vector $v$ will serve more and an indicator of performance. Just like different organizations provide university rankings based on different criteria, this vector will also be based on the same observation.  Changing variable weights will return different solutions. \\
+We want to study this cost vector $v$ based on different scenarios (or weights on different variables)and different methods of producing a barrel of oil using renewables. Depending on our decisions, we will weight some variables more than others. This vector $v$ will serve more and an indicator of performance for different EROI models. As an analogy, consider how different organizations provide university rankings based on different criteria (number of PhDs, research grants, Nobel Prize winners, etc), this vector will behave in a similar basis.  Changing variable weights will return different solutions for different scenarios. \\
 
-We can bring this discussion to the table. If we agree to weight into a certain variable more than another one, we the domocratic judgement is based on the objective function we work on. This clarifies the choices of the model. It all comes down how we weight these variables in question that defines the best working model for the problem. Ultimately, there is no mathematics that does this. It all based on human decisions. \\
+This EROI analysis We can bring this discussion to the table. If we agree to weight into a certain variable more than another one, we the domocratically judge what model to focus on based on which multi-objective function. This will clarify the choices of the model we will expand our work on. It will come down to how we weight these variables in question that will define the best working model for the problem. Ultimately, there is no mathematics that does this, it will depend on human decisions. \\
 
-We analyze the problem situation to find which variables do we have control over and which variable we don't have control over (paramaters, coefficients) and the things we want to optimize over
+In this paper, we analyze the EROI problem through different situations to find which variables do we have control over, which variables we do not have control over (paramaters and coefficients), and which variables we want to optimize. In this paper, we want to show that the vector 
 
-In this paper we want to show that the vector $\langle O, E_{w} + E_{s}, C_{w} + C_{s}, P_{w+s}, X_{w+s}\rangle$ yields better EROI while proving to be a good solutions towards a green future for Alberta. \\
+\begin{displaymath}
+v_{wind+solar}= \langle B, E_{wind} + E_{solar}, C_{wind} + C_{solar}, P_{wind + solar}, X_{wind+solar}\rangle
+\end{displaymath}
+ yields better EROI while proving to be a good solutions towards a green future for Alberta. \\
 
 In other words, we want the following linear combination:
 
 \begin{displaymath}
-P = \underbrace{\alpha \times E_w \times C_w}_\text{EROI Wind Energy} + \underbrace{ \beta \times E_s \times C_s}_\text{EROI Solar Energy}
+P_{wind+solar} = \underbrace{\alpha \times E_w \times C_w}_\text{EROI Wind Energy} + \underbrace{ \beta \times E_s \times C_s}_\text{EROI Solar Energy}
 \end{displaymath}
 
 In this paper we show that $\beta \times E_s \times C_s \approx 0$ does not prove to be a good EROI, hence $P \approx \alpha \times E_w \times C_w $\\
+
+Notes to add:
+\begin{itemize}
+\item Specify what we mean by $P$. If different companies have different profits then we talk about another vector of prices, different companies have different prices associated with the landscape they work on.
+\item Specify what me mean by $CO_2$.  $CO_2$ produced by oil sands companies released in the atmosphere 
+\item Alberta Oil Sands Network
+\item methods for oil sand development
+\end{itemize}
 
 \subsection{Method}
 Simulation: simulate on different objectives and see. Conclude different propositions as a result. \\
@@ -102,17 +106,21 @@ The final step is to take approx solutions to approx problems. \\
 \section{Modelling}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-What are we trying to model? What are my variables? What Algorithm do I need?
-\subsection{Model Oil price of $\$/bbl$ in the next 50 years subject to price of last years using time series analysis}
-\subsection{Model A: Current Alberta Oil Sands Network subject to $\$X/bbl$}
-\subsection{Model B: Alternative Network subject to $\$/bbl$}
-\subsection{Make the case that Model B better than Model A}
+What are we trying to model? What are my variables? What Algorithms do I need?
 
-[Path Linking Method]. We look at the neighborhood of the solution space. 2-objective functions gives birth to 2 grids. Cube space (a,b,c) a=Wind, b=Solar, c=Mining. Different configurations can represent something interesting things. Our topology map will be encoded based on our contrains. Then we need to establish rules, for instance, (1,1,0) can be next to (1,0,1), but not next to (0,1,1) we encode the solution structure. Given X, this is the neighborhood.  
+Notes:
+\begin{itemize}
+\item Model Oil price of $\$/bbl$ in the next 50 years subject to price of last years using time series analysis
+\item Model A: Current Alberta Oil Sands Network subject to $\$X/bbl$
+\item Model B: Alternative Network subject to $\$/bbl$
+\item Make the case that Model B better than Model A
+\item Path Linking Method. We look at the neighborhood of the solution space. 2-objective functions gives birth to 2 grids. Cube space (a,b,c) a=Wind, b=Solar, c=Mining. Different configurations can represent something interesting things. Our topology map will be encoded based on our contrains. Then we need to establish rules, for instance, (1,1,0) can be next to (1,0,1), but not next to (0,1,1) we encode the solution structure. Given X, this is the neighborhood.  
+\end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Simulation}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Notes:
 \begin{itemize}
 \item The first approach will be by exahustive enumeration (brute force). 
 \item Second approach is a branch and bound approach where we are interested in cutting down the number of cases to consider in a decision tree. To explore the heuristics, we take this variable in the grid. We try with another variable. Some discrete variables can be used as continuous. 
@@ -121,14 +129,11 @@ What are we trying to model? What are my variables? What Algorithm do I need?
 
 What are we trying to simulate? What are my simulation environments? What algorithm do I need?
 
-\subsection{Model A: Simulation of Current Alberta Oil Sands Network subject to $\$X/bbl$}
-\subsection{Model B: Simulation of Alternative Network subject to $\$/bbl$}
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Optimization}
 %%%%%%%%%%%%%%%%%%%%%%555555%%%%%%%%%%%%%%%%%%%%%%%%
-If someone goes: ``Go, solve this problem for me'' and they don't have an objective function. This is a paradox. ``Show me the scenarios for this'' this is the real thing. The differen optimums represent different choices because my cost vector does not have more information. Voici the pareto optimum solutions scenarios, we cannot distinguish them if we don't weight in some variables more than others. We give the choice. Then, based on that, we show what we have found. 
+In the pursuit of finding a pareto optinal solution, we will study different pareto optimums which represent different choices because our cost vector  $v$ does not have more information. We give the pareto optimum solutions scenarios, we cannot distinguish them if we don't weight in some variables more than others, so we are left with a choice. Then, based on that choice, we will show what we have found. 
 
 What are we trying to optimize? What are my constrains? What algorithms do I need?
 
@@ -161,12 +166,15 @@ CO2 evaluation methods are highly political. Need to play with this 2 tables (pr
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Conclusion}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+The big picture: what do we propose? and to whom do we propose to? Then a several things to consider. \\
 
-We proposed the problem in this way. Show what we can do about it. Show the model created. Show different action scenarios which show this and that result. Is there something in these results that is of interest to the energy sector? If yes, then expand on that specific branch and show that has to be done for that to happen.\\  
+We proposed the problem in this way. We showed what can we do about it. We showed the model created. We showed different action scenarios which implied this and that result. If there is something in these results that is of interest to the energy sector we then plan to expand on that specific branch and show what has to be done for that to happen.\\  
 
 We showed that this configuration is better than the conventional configuration provided the simulation scenarios. \\
 
-The difference with this problem and other problem is that at the end of the day we have a choice. We can go further and propose things to politicians and oil companies. We can propose things and see how the problem is approached. 
+The difference with this problem and other problem in industry is that at the end of the day we have a choice. We can go further and propose things to politicians and oil companies. We can propose things and see how the problem is approached. \\
 
+\section{References}
+To Add. 
 
 \end{document}
