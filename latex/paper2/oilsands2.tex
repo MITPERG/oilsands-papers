@@ -1,6 +1,6 @@
 \title{ {\bf Oil Sands Research }}
 \author{
-           Paper \#2\\
+           To add to the original paper\\
 	  }
 \date{Spring 2015}
 
@@ -17,24 +17,16 @@
 \setlength{\voffset}{-1.1in}
 \newcommand{\h}[1]{\colorbox{yellow}{#1}}
 \newcommand{\problem}{\subsection*}
-\newcommand{\R}{\mathbb{R}}
-\newcommand{\F}{\mathbb{F}}
-\newcommand{\Z}{\mathbb{Z}}
-\newcommand{\Q}{\mathbb{Q}}
-\newcommand{\C}{\mathbb{C}}
-\newcommand{\Oo}{\mathcal{O}}
 
 \begin{document}
+
 \maketitle
-
-%----------------------------------------------------------------------------------------
-%	CONTENTS
-%----------------------------------------------------------------------------------------
-
 \tableofcontents
 \newpage
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Introduction}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{About}
 Applied math in industry
@@ -71,13 +63,17 @@ this are other perspective to add to the paper.
 \item methods for oil sand development
 \end{itemize}
 
-Problem: Define $O$ the cost of a barrel of oil in the market, $E$ the energy required to develop a barrel of oil, $C$ the cost of producing 1 barrel of oil with a given method, $P$ the profit made by the oil company\footnote{If different companies have different profits then we talk about another vector of prices}, and $X$ the amount of $CO_2\footnote{Specify what exactly do we mean by $CO_2$ here: CO2 produced by oil sands companies}$ released by producing that barrel. First, we want to model the following cost vector $v$ as a multi-objective optimization problem:
+Problem: Define $O$ the cost of a barrel of oil in the market, $E$ the energy required to develop a barrel of oil, $C$ the cost of producing 1 barrel of oil with a given method, $P$ the profit made by the oil company\footnote{If different companies have different profits then we talk about another vector of prices, different companies have different prices associated with the landscape they work on}, and $X$ the amount of $CO_2\footnote{Specify what exactly do we mean by $CO_2$ here: CO2 produced by oil sands companies}$ released by producing that barrel. First, we want to model the following cost vector $v$ as a multi-objective optimization problem:
 
 \begin{displaymath}
 v = \langle O, E_m, C_m, P_m, X_m \rangle
 \end{displaymath}
 
-This vector $v$ will serve more and an indicator of performance. Just like different organizations provide university rankings based on different criteria, this vector will also be based on the same observation. \\
+We build an optimized unidimensional function that is always based on decisions. Depending on our decisions, we weight some variables more than others. A decision that was made based on a certain variable more than other variable. This vector $v$ will serve more and an indicator of performance. Just like different organizations provide university rankings based on different criteria, this vector will also be based on the same observation.  Changing variable weights will return different solutions. \\
+
+We can bring this discussion to the table. If we agree to weight into a certain variable more than another one, we the domocratic judgement is based on the objective function we work on. This clarifies the choices of the model. It all comes down how we weight these variables in question that defines the best working model for the problem. Ultimately, there is no mathematics that does this. It all based on human decisions. \\
+
+We analyze the problem situation to find which variables do we have control over and which variable we don't have control over (paramaters, coefficients) and the things we want to optimize over
 
 In this paper we want to show that the vector $\langle O, E_{w} + E_{s}, C_{w} + C_{s}, P_{w+s}, X_{w+s}\rangle$ yields better EROI while proving to be a good solutions towards a green future for Alberta. \\
 
@@ -100,18 +96,27 @@ What are we trying to model? What are my variables? What Algorithm do I need?
 \subsection{Model B: Alternative Network subject to $\$/bbl$}
 \subsection{Make the case that Model B better than Model A}
 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Simulation}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{itemize}
+\item The first approach will be by exahustive enumeration (brute force). 
+\item Second approach is a branch and bound approach where we are interested in cutting down the number of cases to consider in a decision tree. To explore the heuristics, we take this variable in the grid. We try with another variable. Some discrete variables can be used as continuous. 
+\item We try to find a pareto optimal. But first, we go by scenario-approach. We look for pareto local solutions. We look at different pareto local solutions based on different scenarios. Looking at the model, we might introduce new constrains that we never though before. This process allows to illicit their contrains or needs depending on the choices we make. Then, we can possible arrive at a pareto optimal solution. 
+\end{itemize}
+
 What are we trying to simulate? What are my simulation environments? What algorithm do I need?
 
 \subsection{Model A: Simulation of Current Alberta Oil Sands Network subject to $\$X/bbl$}
 \subsection{Model B: Simulation of Alternative Network subject to $\$/bbl$}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Optimization}
 %%%%%%%%%%%%%%%%%%%%%%555555%%%%%%%%%%%%%%%%%%%%%%%%
+If someone goes: ``Go, solve this problem for me'' and they don't have an objective function. This is a paradox. ``Show me the scenarios for this'' this is the real thing. The differen optimums represent different choices because my cost vector does not have more information. Voici the pareto optimum solutions scenarios, we cannot distinguish them if we don't weight in some variables more than others. We give the choice. Then, based on that, we show what we have found. 
+
 What are we trying to optimize? What are my constrains? What algorithms do I need?
 
 \subsection{Discrete Optimization}
@@ -148,6 +153,7 @@ Make the case for Model B better than Model A.
 
 We showed that this configuration is better than the conventional configuration provided the simulation scenarios. 
 
+The difference with this problem and other problem is that at the end of the day we have a choice. We can go further and propose things to politicians and oil companies. 
 
 
 \end{document}
