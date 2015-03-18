@@ -1,6 +1,6 @@
 \title{ {\bf Oil Sands Research }}
 \author{
-           To add to Paper\#1\\
+           Paper\#2\\
 	  }
 \date{Spring 2015}
 
@@ -28,8 +28,22 @@
 \section{Introduction}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\subsection{Mise-en-Contexte}
+The oil sands industry has experienced two challenging events in the past months. First of all, the continous drop of oil price and the rejection of Keystone XL by the Obama administration. As a consequences, oil companies started to pull the plug on Alberta expansions and cutting down the expenses under a break-even threshold analyst say is needed to justify a bran new oil sand expansion.. In addition, companies are trimming spending plans and reducing workforces in response to this. Another twist to the story is that investors are diverted to U.S shale oil plays.  \\
+
+  Mr. Laut said oil sand producers were making three times the profit in 2004 when a barrel of oil cost about \$40 U.S than it did when the price hit close to \$100 in 2013. What happens is the rising cost of supplier. Two important points follow:
+  
+  \begin{enumerate}
+  \item producers have to be more efficient and develop new technologies that lower production costs
+  \item Cut costs and eliminate inefficiencies
+  \end{enumerate}
+
+Shell's focus: ``Our current focus is on making our heavy oil business as economically and environmentally competitive as possible''
+
 \subsection{About}
-In this paper we attack the Oil Sands EROI from an applied math \& computer science approach with a touch of data science and data visualization. In this paper, we focus on: 
+In this paper we study the Oil Sands EROI in Alberta, Canada as a multi-objective optimization problem in order to show that if we use renewables to produce oil sands then not only we can achieve a CO2-free industry, but also a more profitable industry. 
+
+In this paper, we focus on: 
 \begin{enumerate}
 \item {\bf Modelling} \\
 We have data, we don't know if this data is useful or not, we need to show that we
@@ -42,19 +56,26 @@ What are the most important factors. which elements take into account. most impo
 variables. \\
 \end{enumerate}
 
+{\em Process Insight:} Oil sands upstream processing
+{\em Asset Insight:} Equipment Realiability and Maintenance
+
 The Oil Sands industry is not a simple and direct Minimizing/Maximizing optimization problem in which we are trying to minimize the $CO_2$ amount while maximizing profits as simply as that, but it is rather a modern complex optimization problem combining solutions from Discrete, Combinatorial, Stochastic, and Multi-Objetive algorithms. \\
 
-In this paper, we didscuss the combination of multiple methods to find a better configuration than the conventional configuration through meta-huristic algorithms. \\
+In this paper, we discuss the combination of multiple methods to find a better configuration than the conventional configuration through meta-huristic algorithms. \\
 
-\subsection{Supply \& Demand}
+DATA ->Build Model  by training extact patterns -> Geologic Block Data by Applying rules -> Visualize One Body Map or Visualize One Processability Map
+
+\subsection{Current Supply \& Demand}
 
 Currently, there is more supply than demand. In this paper, we are interested in studying supply vs deman from supply ``need'' point of view. The price of oil has been fluctuating a lot in the past months, yet people basic needs have been evolving more slowly. The price of gas is not considerably lower and we want to address the issue of  supply from a concrete need of the population. We will talk about elastic and inelastic demand, this will give an interesting perspective to the paper. \\
 
-The highest price for a barrel was above \$100 in 2013 [ref]. However, oil sands idustries were making their highest profits back in 2007, when the price of a barrel of oil was \$54 [ref]. Therefore, industries were making four times as much profit was they were making it today. What changed? As the price of a barrel of oil went up, so did all the supplier costs and third party services. Now, the price is down, but the cost of suppliers and other vendors is not down, but they remain the same. That's what the main issue is right now. What we want to do is find ways to reduce supplier costs. They have not reached a technological peak so that the supply of these suppliers is affordable.  \\
+The highest price for a barrel was above \$100 in 2013 [ref]. However, oil sands idustries were making their highest profits back in 2007, when the price of a barrel of oil was \$54 [ref]. Therefore, industries were making four times as much profit was they were making it today. What changed? As the price of a barrel of oil went up, so did all the supplier costs and third party services. Now, the price is down, but the cost of suppliers and other vendors is not down, but they remain the same. That's what the main issue is right now. What we want to do is find ways to reduce supplier costs. They have not reached a technological peak so that the supply of these suppliers is affordable.\\
 
 TO ADD: the situation regarding Keystone XL
 
-\subsection{Problem Domain}
+\subsection{Introduction to Multi-objective Optimization Problem (MOP)}
+
+A multi-objective optimization problem consists in a set of objectives (discrete variables) to which we associate a cost function we want to optimize. Th set of optimized solutions is the pareto optimal set. \\
 
 We address the Oil Sands EROI problem from the following perpective: \\
 
@@ -127,7 +148,18 @@ Notes:
 \item We try to find a pareto optimal. But first, we go by scenario-approach. We look for pareto local solutions. We look at different pareto local solutions based on different scenarios. Looking at the model, we might introduce new constrains that we never though before. This process allows to illicit their contrains or needs depending on the choices we make. Then, we can possible arrive at a pareto optimal solution. 
 \end{itemize}
 
-What are we trying to simulate? What are my simulation environments? What algorithm do I need?
+\subsection{Techniques}
+\begin{enumerate}
+\item Using generic algorithms (meta-heuristics)
+\item Non-scalar and non-pareto approch: VEGA (Vector Evaluated Genetic Algorithm)
+\item Target Amining Pareto Search (TAPAS)
+\item Path Relinking Algorithm: Neighborhood Exploration. Add graph.  
+\item Domination Dependent lifetime: maximal lifetime is assigned to each wind turbine. The lifetime is shortened if the solution dominates a major part of the present non-dominated solutions. This limits the impact of the solution. 
+\end{enumerate}
+
+What are we trying to simulate? What are my simulation environments? What algorithm do I need? \\
+
+Data set analysis. 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -163,6 +195,29 @@ Maybe be not. This what we call multi-objective optimization (profit, co2). When
 
 CO2 evaluation methods are highly political. Need to play with this 2 tables (profit, co2)
 
+\subsection{Performance Assessment}
+\begin{itemize}
+\item How to measure the quality of the solution?? 
+\item How much time does it take to generate the solution set??
+\item What we find in this paper is that we don't find a single solution, but rather a set of solutions based on trade-offs
+\end{itemize}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Results}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{CO2-Free solution long term}
+\begin{itemize}
+\item More progress towards returning the landscape back
+\end{itemize}
+
+
+\subsection{A profitable business for oil companies}
+\begin{itemize}
+\item More \$ for refineries and pipelines
+\item (SAMPLE) The technology resulted in an additional 1,600 barrels of bitumen per day being recovered from just one vessel. The figure means that 50\% less marerial ends up in tailing ponds, and at oil prices \$50 per barrel translates into an additional 30 million in annual revenues for Suncor. 
+\end{itemize}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Conclusion}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -173,6 +228,10 @@ We proposed the problem in this way. We showed what can we do about it. We showe
 We showed that this configuration is better than the conventional configuration provided the simulation scenarios. \\
 
 The difference with this problem and other problem in industry is that at the end of the day we have a choice. We can go further and propose things to politicians and oil companies. We can propose things and see how the problem is approached. \\
+
+END USER ACTION FOCUSING -> High Order Complex relationship -> Transparency (Provide an easy way to understand outcomes  instead of black box approaches) -> Multiple Data Sources (handling Unstructured data) 
+
+In the end, we find a better balance between profit margins and public safety . 
 
 \section{References}
 To Add. 
