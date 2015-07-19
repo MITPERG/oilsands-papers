@@ -1,6 +1,6 @@
 ## Excel Versions
 
-V20
+No records found for V1 and V12
 
 **V21**
 - Changed Wind Graphs to US$75/bbl and $2/Watt Cost
