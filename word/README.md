@@ -31,3 +31,9 @@
 **V22**
 
 * Improving section 5.2 CO2 Footprint as a function of Carbon Tax
+
+**V23**
+- Improved section 3.2
+- Added note on Workforce Adjustment in section 6.2
+- Improved section 5.2, added Figures 8 and 9
+- Updated references
