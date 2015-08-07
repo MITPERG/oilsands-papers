@@ -39,3 +39,10 @@
 - Updated references
 - Fixed Mark's organization description
 - Fixed minor typos in Section 6 Labour
+
+**V24** (2015-08-06)
+- Fixed formatting and typos
+- Improved model specifications
+- Added Appendix Section
+- Added Acknowledgment section
+- Fixed references formatting (APA Style)
