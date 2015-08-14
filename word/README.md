@@ -1,41 +1,41 @@
 
 ## Paper Versions
 
-**V18**
+**V18** (2015-05-19)
 
 * Improved Section 5 on Carbon tax
 * I added a couple of draft notes Section 6 on Labour 
 
-**V19**
+**V19** (2015-06-29)
 
 * Added Section 1.3 on Why Renewables
-* Added section 4.4 on Hydro Pump
+* Added Section 4.4 on Hydro Pump
 * Splitted Section 5 into 5.1 and 5.2
 * Added Section 6 Impact on Labour
 * Fixed References section 
 
-**V20**
+**V20** (2015-07-04)
 
 * Updated Model to US$75/bbl and $2/Watt Cost 
 * Seems to me that $3/Watt would make more sense...
 * Updated CAPP report
 * Improved Section 5.1 
 * Improved Section 5.2
-* Improved Labour Section 6
+* Improved Section 6
 
-**V21**
+**V21** (2015-07-21)
 
 * Added Section 3.2 Economic Model Specifications
 * Added keyword substitution: from 'symbiotic approach' to 'symbiotic model', I believe 'model' is a more appropriate word in the context of the paper.  
 
-**V22**
+**V22** (2015-07-14)
 
-* Improved section 5.2 CO2 Footprint as a function of Carbon Tax
+* Improved Section 5.2 CO2 Footprint as a function of Carbon Tax
 
-**V23**
-- Improved section 3.2
-- Added note on Workforce Adjustment in section 6.2
-- Improved section 5.2, added Figures 8 and 9
+**V23** (2015-07-23)
+- Improved Section 3.2
+- Added note on Workforce Adjustment in Section 6.2
+- Improved Section 5.2, added Figures 8 and 9
 - Updated references
 - Fixed Mark's organization description
 - Fixed minor typos in Section 6 Labour
@@ -44,5 +44,6 @@
 - Fixed formatting and typos
 - Improved model specifications
 - Added Appendix Section
+- Moved Section 3.3 Offset Calculation to Appendix
 - Added Acknowledgment section
 - Fixed references formatting (APA Style)
