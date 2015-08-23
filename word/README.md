@@ -47,3 +47,9 @@
 - Moved Section 3.3 Offset Calculation to Appendix
 - Added Acknowledgment section
 - Fixed references formatting (APA Style)
+
+**V25** (2015-08-18)
+- Synthesized paper to 9 pages (reduction of 66.3%)
+- Restructured the paper sections (Intro, Results, Discussion, Conclusion)
+- Updated References, fixed reference [4]
+- Removed Table of Contents
