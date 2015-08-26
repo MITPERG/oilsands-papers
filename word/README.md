@@ -53,3 +53,9 @@
 - Restructured the paper sections (Intro, Results, Discussion, Conclusion)
 - Updated References, fixed reference [4]
 - Removed Table of Contents
+
+**V26** (2015-08-26)
+- Added David's comments. Better structure, quality, and less ambiguity
+- Combined Results and Discussion Sections
+- Improved Conclusion
+- Fixed typo in References. Added more references 
