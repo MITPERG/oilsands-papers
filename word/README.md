@@ -59,3 +59,10 @@
 - Combined Results and Discussion Sections
 - Improved Conclusion
 - Fixed typo in References. Added more references 
+
+**V27** (2015-09-16)
+- Added temporary introduction
+- Improved method section with carbon numbers
+- Added some thoughts/bullet points in Results section
+- Added temporary conclusion
+- Added References
