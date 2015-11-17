@@ -69,3 +69,6 @@
 
 **V28** (2015-09-21)
 - Added correct carbon values
+- Improved method section by David
+- Improved references
+- Paper took a more "publishable" shape
