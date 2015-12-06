@@ -72,3 +72,10 @@
 - Improved method section by David
 - Improved references
 - Paper took a more "publishable" shape
+
+**V29** (2015-11-16)
+- Better paper title
+- Improved results section
+- Method section rewritten
+- New referenes
+- Almost there...
