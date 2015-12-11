@@ -79,3 +79,8 @@
 - Method section rewritten
 - New referenes
 - Almost there...
+
+**V30** (2015-10-12)
+- New title
+- Formatting and typos fixes
+- Added Suplemental Information (SI) section
