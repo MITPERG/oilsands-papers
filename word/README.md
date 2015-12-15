@@ -69,3 +69,18 @@
 
 **V28** (2015-09-21)
 - Added correct carbon values
+- Improved method section by David
+- Improved references
+- Paper took a more "publishable" shape
+
+**V29** (2015-11-16)
+- Better paper title
+- Improved results section
+- Method section rewritten
+- New referenes
+- Almost there...
+
+**V30** (2015-10-12)
+- New title
+- Formatting and typos fixes
+- Added Suplemental Information (SI) section
