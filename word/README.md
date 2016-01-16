@@ -91,3 +91,6 @@
 
 **V32** (2016-04-01)
 - Updates from David
+
+**V33** (2016-11-01)
+- Updates and formatting fixes by Alex
