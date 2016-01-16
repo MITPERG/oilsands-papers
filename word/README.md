@@ -84,3 +84,10 @@
 - New title
 - Formatting and typos fixes
 - Added Suplemental Information (SI) section
+
+**V31** (2015-15-12)
+- Minor text description improvements
+- Minor typo fixes
+
+**V32** (2016-04-01)
+- Updates from David
