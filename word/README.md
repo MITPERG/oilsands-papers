@@ -92,6 +92,11 @@
 **V32** (2016-04-01)
 - Updates from David
 
-**FINAL.zip** (2016-17-02)
-- Manuscript ready, added requirements for journal submission
-- Includes all extra information required for journal submission
+
+**V33** (2016-11-01)
+- Updates and formatting fixes by Alex
+
+**FINAL.zip** (2016-17-02)^M
+- Manuscript ready, added requirements for journal submission^M
+- Includes all extra information required for journal submission^M
+
